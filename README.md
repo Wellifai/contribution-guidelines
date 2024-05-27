@@ -4,6 +4,12 @@ Welcome to our contribution guide repository!
 This repository provides guidelines on how to contribute to our company projects.
 Right now this repository describes what we should strive for. Given our team size, we have to cut corners, so not everything listed below will be followed to the letter. Please use common sense :)
 
+## Table of contents
+1. [Steps to contribute to a GitHub repository](#1-steps-to-contribute-to-a-github-repository)
+2. [Commit messages](#2-commit-messages)
+3. [Code quality](#3-code-quality)
+4. [Semantic versioning](#4-semantic-versioning)
+
 ## 1. Steps to contribute to a GitHub repository
 If you are allowed to commit changes directly, do that. If not, you should follow these rules:  
   
@@ -16,6 +22,7 @@ If you are allowed to commit changes directly, do that. If not, you should follo
 7. **Create a pull request**: Submit a pull request to the original repository.
 
 ## 2. Commit messages
+### 2.1 Conventional commits
 [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) should be used.
 Please let me know if you think there is a need for a new type.  
 * build: Changes related to the build system or external dependencies.
@@ -34,7 +41,7 @@ Please let me know if you think there is a need for a new type.
 * style: Code style changes, such as formatting, indentation, or naming conventions.
 * test: Adding or modifying tests.  
 
-### 2.1 Scope
+### 2.2 Scope
 The scope specifies the section of the codebase affected by the changes. It provides additional contextual information and helps in understanding the impact of the commit. The scope is optional but recommended for clarity.
 The scope should be the name of the module affected (as perceived by the person reading the changelog generated from commit messages).
 
@@ -51,7 +58,7 @@ Example scopes (this is not a final list):
 - **navigation**: changes to navigation mechanism/routes
 - **database**: Changes in database-related code.
 - **config**: Configuration file updates or changes.
-- **component-<component-name>**: changes to a specific component
+- **comp-<component-name>**: changes to a specific component
 
 Commit message format:
 ```
@@ -70,7 +77,7 @@ This feature allows the user to parse arrays, enabling support for complex data 
 BREAKING CHANGE: The parse method now returns an array instead of a single object.
 ```
 
-### Best practices
+###Best practices
 * Single Responsibility: Each commit should ideally address a single problem or add one feature. Avoid bundling multiple changes into one commit (exceptions are possible, for example, multiple minor changes in the same module could be bundled in one commit).
 * Commit Message Accuracy: A commit should only include changes that are described in the commit message. Do not include unrelated fixes or features.
 * Minimize File Changes: Keep the changes (number of files changed) in each commit as minimal as possible, focusing only on the specific issue or feature being addressed.
@@ -102,10 +109,10 @@ Maintaining high code quality is crucial for the success and maintainability of 
 Note: Please only lint the code that you commit, and the files you work on. Don't lint everything in the repository. Different people use different tools/settings for linting.  
 Note: exact linting/formatting/commenting rules will be decided later. Please don't go overboard with commenting everything :)
 
-## 4. [Semantic versioning](https://semver.org/)
+## [4. Semantic versioning](https://semver.org/) 
 This part is not implemented/strictly followed yet.  
   
-Version number should correspond to Major/Minor/Patch:  
+The version number should correspond to Major/Minor/Patch:  
 - **Major**: Incremented for incompatible API changes.
 - **Minor**: Incremented for backward-compatible functionality.
 - **Patch**: Incremented for backward-compatible bug fixes.
