@@ -58,7 +58,7 @@ Example scopes (this is not a final list):
 - **navigation**: changes to navigation mechanism/routes
 - **database**: Changes in database-related code.
 - **config**: Configuration file updates or changes.
-- **comp-<component-name>**: changes to a specific component
+- **comp-&lt;component-name&gt;**: changes to a specific component
 
 Commit message format:
 ```
