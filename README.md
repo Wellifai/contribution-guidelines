@@ -121,4 +121,4 @@ The version number should correspond to Major/Minor/Patch:
 Assume the current version of a project is `1.4.2`:  
 - If a new feature is added in a backward-compatible manner, the new version will be `1.5.0`.
 - If a bug is fixed without affecting the API, the new version will be `1.4.3`.
-- If there is an incompatible API change, the new version will be `2.0.0`.
+- If there is an incompatible API change, the new version will be `2.0.0` (really think this through!).
